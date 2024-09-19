@@ -104,6 +104,9 @@ nav .nav-pages {
 
     background-color: #e9e9e949;
 }
+#carousel{
+    margin-top: 1%;
+}
 
 .carousel {
     width: 100%;
@@ -128,6 +131,11 @@ nav .nav-pages {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+}
+
+.lor-cover, .bienal-cover{
+    object-fit: fill !important;
 }
 
 .navigation {
@@ -186,9 +194,42 @@ h4 {
 
 .image-container {
     width: 20%;
-    height: 50%;
+    position: relative;
+
 }
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d14131c7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+}
+
+.overlay p {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 .desc-eventos {
     display: flex;
@@ -228,6 +269,7 @@ div:has(#img-menor) {
 
 #img-menor {
     z-index: 1;
+    object-fit: fill;
 }
 
 #img-maior {
@@ -468,40 +510,27 @@ footer a:visited {
     }
 }
 
-.image-container {
-    position: relative;
 
-}
-
-.image-container img {
+.images-lancamentos img,
+.images-destaques img {
     width: 100%;
-    height: 100%;
-    display: block;
+    height: auto;
+    object-fit: cover;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 0, 0, 0.6);
-    /* Fundo vermelho translúcido */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 10px;
+@media only screen and (max-width: 768px) {
+   
+    .carousel img {
+        height: 200px;
+    }
 }
 
-.image-container:hover .overlay {
-    opacity: 1;
-}
+@media only screen and (max-width: 425px) {
+    .header-text {
+        font-size: 24px;
+    }
 
-.overlay p {
-    font-size: 24px;
-    font-weight: bold;
+    .nav-pages a {
+        padding: 8px 12px;
+    }
 }

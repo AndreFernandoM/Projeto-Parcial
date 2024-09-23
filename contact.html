@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/contact.css">
     <title>Contato</title>
 </head>
 
@@ -22,35 +23,86 @@
         </nav>
     </header>
     <div class="center">
-
         <div class="container">
             <section class="contact-section">
-                <h2>Entre em Contato</h2>
-                <form action="/submit_contact" method="POST">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Seu nome" required><br><br>
+                <h2 style="padding: 2vh 0 0 3vh">Entre em Contato</h2>
+                <div class="form-div" style="display: flex; column-gap: 20vh; width: 100%">
+                    <form action="/contact.html" method="GET" style="
+                padding-top: 3vh;
+                padding-left: 2vh;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                font-weight: 500;
+              ">
+                        <label for="name" style="padding-bottom: 10px">Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome"
+                            style="border: 1px solid lightgray; padding: 6px" required /><br /><br />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Seu email" required><br><br>
+                        <label for="email" style="padding-bottom: 10px">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email"
+                            style="border: 1px solid lightgray; padding: 6px" required /><br /><br />
 
-                    <label for="phone">Telefone:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
-                        placeholder="XX-XXXXX-XXXX"><br><br>
+                        <label for="phone" style="padding-bottom: 10px">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{9}" placeholder="XX-XXXXX-XXXX"
+                            style="border: 1px solid lightgray; padding: 6px" /><br /><br />
 
-                    <label for="service">Assunto:</label>
-                    <select id="service" name="service" required>
-                        <option value="duvida">Dúvida</option>
-                        <option value="sugestao">Sugestão</option>
-                        <option value="reclamacao">Reclamação</option>
-                    </select><br><br>
+                        <label for="service" style="padding-bottom: 10px">Assunto:</label>
+                        <select id="service" name="service" style="border: 1px solid lightgray; padding: 6px" required>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select><br />
 
-                    <label for="message">Mensagem:</label><br>
-                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui" rows="4"
-                        required></textarea><br><br>
+                        <label for="message" style="padding-bottom: 3px">Mensagem:</label><br />
+                        <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui" rows="4"
+                            style="border: 1px solid lightgray" required></textarea><br /><br />
 
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Resetar</button>
-                </form>
+                        <div style="
+                  display: flex;
+                  flex-direction: row-reverse;
+                  justify-content: space-evenly;
+                ">
+                            <button type="submit" style="
+                    width: 30%;
+                    background-color: #4caf50;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: background-color 0.3s;
+                  " onmouseover="this.style.backgroundColor='#45a049'"
+                                onmouseout="this.style.backgroundColor='#4CAF50'">
+                                Enviar
+                            </button>
+
+                            <button type="reset" style="
+                    width: 30%;
+                    background-color: #f44336;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: background-color 0.3s;
+                  " onmouseover="this.style.backgroundColor='#d32f2f'"
+                                onmouseout="this.style.backgroundColor='#f44336'">
+                                Resetar
+                            </button>
+                        </div>
+
+                        <hr style="margin-bottom: 1vh" />
+                        <p style="display: flex; flex-direction: column; width: 65%">
+                            <b>Livraria Genérica</b> Av. Lorem Ipsum, 80 Lorem Ipsum, São
+                            Paulo/SP CEP: 00000-000
+                        </p>
+                    </form>
+                    <img src="./images/image.png" style="width: 700px; height: 700px; cursor: pointer" alt="" />
+                </div>
             </section>
         </div>
     </div>

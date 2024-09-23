@@ -1,0 +1,41 @@
+@media (max-width: 1440px) {
+    .gallery-grid>img {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .gallery-grid>img {
+        height: 200px;
+        width: 200px;
+    }
+
+}
+@media (max-width: 768px) {
+    .gallery-grid>img {
+        height: 150px;
+        width: 150px;
+    }
+
+}
+@media (max-width: 425px) {
+    .gallery-grid>img {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+@media (max-width: 320px) {
+    .gallery-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .gallery-grid>img {
+        width: 250px;
+        height: 300px;
+    }
+
+}

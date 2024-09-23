@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-
     <title>Contato</title>
 </head>
 
 <body>
-
     <header>
         <a class="header-text" href="./index.html">Livraria Genérica</a>
         <nav>
@@ -23,19 +21,48 @@
             </ul>
         </nav>
     </header>
+    <div class="center">
+
+        <div class="container">
+            <section class="contact-section">
+                <h2>Entre em Contato</h2>
+                <form action="/submit_contact" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required><br><br>
+
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                        placeholder="XX-XXXXX-XXXX"><br><br>
+
+                    <label for="service">Assunto:</label>
+                    <select id="service" name="service" required>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select><br><br>
+
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui" rows="4"
+                        required></textarea><br><br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetar</button>
+                </form>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <a href="mailto:hege@example.com">
-            <p>Autor: André Fernando Machado </p>
+            <p>Autor: André Fernando Machado</p>
         </a>
         <a href="https://github.com/AndreFernandoM" target="_blank">
             <p>Github: AndreFernandoM</p>
         </a>
-
-
     </footer>
-
-
 </body>
 
 </html>

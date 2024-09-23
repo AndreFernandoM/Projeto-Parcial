@@ -11,16 +11,38 @@
             padding: 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-direction: column;
+            row-gap: 1vh;
+            align-items: flex-start;
+        }
+
+        .about-section h2 {
+            font-weight: 500;
+            font-size: xx-large;
+            margin: 2% 0;
         }
 
         .about-text {
             width: 80%;
             text-align: justify;
             color: #464646;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.8;
+        }
+
+        .socials {
+            width: 30%;
+            margin-left: 2vh
+        }
+
+        .socials>img {
+            width: 5vh;
+            margin-right: 1.2vh;
+            cursor: pointer;
+        }
+
+        .socials>p {
+            margin-bottom: 3%;
         }
     </style>
 </head>
@@ -42,7 +64,7 @@
 
         <div class="container">
             <section class="about-section">
-                <h2>Sobre a Livraria Genérica</h2>
+                <h2>Sobre Nós</h2>
                 <p class="about-text">
                     A Livraria Genérica é um espaço dedicado a todos os amantes da literatura. Oferecemos uma grande
                     variedade de livros,
@@ -61,6 +83,13 @@
                     de eventos literários, lançamentos de livros e parcerias com autores e editoras renomadas.
                 </p>
             </section>
+            <div class="socials">
+                <p>Nossas redes: </p>
+                <img src="images/facebook.png" alt="facebook logo">
+                <img src="images/instagram.png" alt="instagram logo">
+                <img src="images/linkedin.png" alt="linkedin logo">
+
+            </div>
         </div>
     </div>
 

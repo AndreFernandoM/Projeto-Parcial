@@ -5,8 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./images/info.png" type="image/x-icon">
 
-    <title>Sobre</title>
+    <title>Sobre Nós</title>
+    <style>
+        .about-section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 1vh;
+            align-items: flex-start;
+        }
+
+        .about-section h2 {
+            font-weight: 500;
+            font-size: xx-large;
+            margin: 2% 0;
+        }
+
+        .about-text {
+            width: 80%;
+            text-align: justify;
+            color: #464646;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .socials {
+            width: 30%;
+            margin-left: 2vh
+        }
+
+        .socials img {
+            width: 5vh;
+            margin-right: 1.2vh;
+            cursor: pointer;
+        }
+
+        .socials>p {
+            margin-bottom: 3%;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,18 +62,46 @@
             </ul>
         </nav>
     </header>
+    <div class="center">
+
+        <div class="container">
+            <section class="about-section">
+                <h2>Sobre Nós</h2>
+                <p class="about-text">
+                    A Livraria Genérica é um espaço dedicado a todos os amantes da literatura. Oferecemos uma grande
+                    variedade de livros,
+                    desde clássicos da literatura mundial até as últimas novidades do mercado editorial. Nosso objetivo
+                    é
+                    promover o hábito
+                    da leitura e fornecer um ambiente onde todos possam encontrar a obra perfeita para suas
+                    necessidades.
+                </p>
+                <p class="about-text">
+                    Com mais de 20 anos de experiência no setor, temos o orgulho de ser referência quando o assunto é
+                    curadoria literária,
+                    oferecendo títulos exclusivos e edições raras. Nossa missão é continuar inspirando leitores de todas
+                    as
+                    idades, através
+                    de eventos literários, lançamentos de livros e parcerias com autores e editoras renomadas.
+                </p>
+            </section>
+            <div class="socials">
+                <p>Nossas redes: </p>
+                <a href=""><img src="images/facebook.png" alt="facebook logo"></a>
+                <a href=""><img src="images/instagram.png" alt="instagram logo"></a>
+                <a href=""><img src="images/linkedin.png" alt="linkedin logo"></a>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <a href="mailto:hege@example.com">
-            <p>Autor: André Fernando Machado </p>
+            <p>Autor: André Fernando Machado</p>
         </a>
         <a href="https://github.com/AndreFernandoM" target="_blank">
             <p>Github: AndreFernandoM</p>
         </a>
-
-
     </footer>
-
 </body>
 
 </html>

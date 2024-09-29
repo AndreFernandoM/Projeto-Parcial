@@ -5,15 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./images/galeria.png" type="image/x-icon">
 
     <title>Galeria</title>
-
     <style>
+        .gallery-section h2 {
+            margin: 2vh 1vh;
+            font-size: xx-large;
+        }
 
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2vh;
+            justify-items: center;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
-
-
 
 <body>
     <header>
@@ -28,18 +48,37 @@
             </ul>
         </nav>
     </header>
+    <div class="center">
+        <div class="container">
+            <section class="gallery-section">
+                <h2>Galeria de Imagens</h2>
+                <div class="gallery-grid">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=1" alt="imagem 1">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=2" alt="imagem 2">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=3" alt="imagem 3">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=4" alt="imagem 4">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=5" alt="imagem 5">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=7" alt="imagem 7">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=8" alt="imagem 8">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=9" alt="imagem 9">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=10" alt="imagem 10">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=11" alt="imagem 11">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=12" alt="imagem 12">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=13" alt="imagem 13">
+                    <img src="https://loremflickr.com/400/300/bookstore?random=14" alt="imagem 14">
+                </div>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <a href="mailto:hege@example.com">
-            <p>Autor: André Fernando Machado </p>
+            <p>Autor: André Fernando Machado</p>
         </a>
         <a href="https://github.com/AndreFernandoM" target="_blank">
             <p>Github: AndreFernandoM</p>
         </a>
-
-
     </footer>
-
 </body>
 
 </html>

@@ -6,6 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
     <title>Blog</title>
+
+    <style>
+        .blog-section {
+            margin: 1vh;
+        }
+
+        .blog-section h1 {
+            margin: 2vh 0;
+            font-size: xx-large;
+        }
+
+        .post {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2vh;
+        }
+
+        .container-noticia {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .container-noticia a {
+            width: 100%;
+        }
+
+        .container-noticia img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            max-width: 300px;
+            height: 250px;
+            cursor: pointer;
+
+        }
+
+        .container-noticia img:hover {
+            transform: scale(1.05);
+        }
+
+        .container-noticia div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container-noticia h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .resumo-noticia {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .btn-saber-mais {
+            margin-top: auto;
+            padding: 0.5rem 1rem;
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-saber-mais:hover {
+            background-color: #c9302c;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,23 +105,135 @@
 
         <div class="container">
             <section class="blog-section">
-                <h2>Blog e Notícias</h2>
+                <h1>Notícias</h1>
                 <article class="post">
-                    <h3>Últimos Lançamentos de Livros</h3>
-                    <img src="https://placehold.co/300x200" alt="imagem 3">
-                    <img src="https://placehold.co/300x200" alt="imagem 4">
-                    <img src="https://placehold.co/300x200" alt="imagem 5">
-                    <img src="https://placehold.co/300x200" alt="imagem 6">
-                </article>
-                <article class="post">
-                    <h3>Evento Literário da Semana</h3>
-                    <img src="https://placehold.co/300x200" alt="imagem 3">
-                    <img src="https://placehold.co/300x200" alt="imagem 4">
-                    <img src="https://placehold.co/300x200" alt="imagem 5">
-                    <img src="https://placehold.co/300x200" alt="imagem 6">
-                </article>
-            </section>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=1" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=3" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=4" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=5" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=6" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=7" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=8" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=9" alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=10"
+                                alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
+                    <div class="container-noticia">
+                        <a href=""><img src="https://loremflickr.com/320/240/books?random=11"
+                                alt="Cover da Noticia"></a>
+                        <div>
+                            <h3>Titulo da Noticia</h3>
+                            <p class="resumo-noticia">Resumo da noticia Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Accusamus ab
+                                blanditiis quo est commodi
+                            </p>
+                            <button class="btn-saber-mais">Saber Mais</button>
+                        </div>
+                    </div>
         </div>
+
+        </article>
+        </section>
+    </div>
     </div>
 
     <footer>
